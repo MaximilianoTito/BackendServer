@@ -27,4 +27,7 @@ export class BaseProductDto {
 
   @IsNotEmpty(isNotEmptyValidationOptions())
   readonly category: number;
+  
+  @Allow()
+  readonly category : CategoryEntity;
 }
